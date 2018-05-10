@@ -1,0 +1,33 @@
+body{	
+    background-color:;
+    background-image:linear-gradient(top, #1E90FF 0%, #F8F8FF 51%);
+    background-image:-webkit-linear-gradient(top, #1E90FF 0%, #F8F8FF 51%);
+    background-image:-ms-linear-gradient(top, #1E90FF 0%, #F8F8FF 51%);
+    background-image:-webkit-gradient(
+    	linear,
+        left top,
+        left bottom,
+        color-stop(0, #1E90FF),
+        color-stop(0.51, #F8F8FF)
+    );
+	
+	background-size: cover;
+}
+
+
+.app {
+    background:url(../img/image_225.png) no-repeat center top; /* 170px x 200px */    
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    padding: 0px;
+    padding-top: 180px;
+ }
+
+ .event {
+ 	text-align: center;
+ 	margin:0 auto;
+    
+}

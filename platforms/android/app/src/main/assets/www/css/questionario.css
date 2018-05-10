@@ -1,0 +1,59 @@
+.app{
+	top:30%;
+	padding-top: 70px;
+}
+
+
+ul{
+	list-style: none;
+}
+li{
+	margin-bottom: 7px;
+}
+
+input[type='radio']{
+	display: inline-block;
+	color:white;
+	font-size: 14px;		
+	width: 10px;
+	margin-right: 7px;
+}
+
+
+label{
+	color:white;
+	display: inline-block;
+	width: 150px;
+	text-shadow: 1px 1px black;
+}
+
+.emoji{
+	font-family: noto_emoji;
+	display: inline-block;
+	width: 24px;
+	text-align: center;
+}
+h5{
+	font-weight: bold;
+	color:white;
+	font-size: 18px;
+	text-shadow: 2px 2px black;
+}
+
+
+
+button{
+	display: inline-block;
+}
+
+
+.questoes{
+	margin-top: 10px;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+
+input[type='text']{
+	padding-left: 7px;
+	padding-right: 7px;
+}

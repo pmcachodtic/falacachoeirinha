@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html  ng-app="dti">
+    <head>
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;script-src 'self' 'unsafe-inline';connect-src http://sistemas.cachoeirinha.rs.gov.br/pmcachoSocialQuiz/">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="icon"  href="img/dialogo.png">        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/angular-confirm.min.css">       
+        <link rel="stylesheet" type="text/css" href="css/leiaute.css">
+        <link rel="stylesheet" type="text/css" href="css/register.css">
+        <title>Diálogos com a Cidade</title>
+
+
+
+    </head>
+    <body>
+        <div class="app" >
+            
+            <div class="login-box" ng-controller="registro-controller">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <span><i class="fa fa-drivers-license-o" ></i></span>
+                    <input type="text" placeholder="CPF" id="cpf" ng-model="contribuinte.cpf" ng-blur="localizarContribuinte()"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <span><i class="fa fa-user"></i></span>
+                    <input type="text" placeholder="Nome" ng-model="contribuinte.nome"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <span><i class="fa fa-at"></i></span>
+                    <input type="email" placeholder="E-mail" ng-model="contribuinte.email"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <span><i class="fa fa-vcard"></i></span>
+                    <input type="number" placeholder="Idade" ng-model="contribuinte.idade"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <span><i class="fa fa-venus-mars"></i></span>
+                    <select ng-model="contribuinte.sexo" >
+                     <option value="" disabled selected>Sexo</option>  
+                     <option ng-value="1">Masculino</option>  
+                     <option ng-value="2">Feminino</option>          
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <span><i class="fa fa-graduation-cap"></i></span>
+                    <select ng-model="contribuinte.formacao">
+                     <option value="" disabled selected>Formação</option>  
+                     <option ng-value="1" >Ensino Fundamental Incompleto</option>  
+                     <option ng-value="2" >Ensino Fundamental Completo</option>  
+                     <option ng-value="3" >Ensino Médio Incompleto</option>  
+                     <option ng-value="4" >Ensino Médio Completo</option>  
+                     <option ng-value="5" >Superior Incompleto</option>  
+                     <option ng-value="6" >Superior Completo</option>   
+                     <option ng-value="7" >Pós-graduação completa</option>  
+                     <option ng-value="8" >Pós-graduação incompleta</option>   
+                     <option ng-value="9" >Mestrado</option>  
+                     <option ng-value="10" >Doutorado</option>   
+                     <option ng-value="11" >Pós-Doutorado</option>   
+                    </select>
+                  </div>
+                </div>                
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <span><i class="fa fa-map"></i></span>
+                    <select ng-model="contribuinte.bairro" ng-options="item.bairro for item in bairros | orderBy:'bairro' track by item.bairro" >
+                        <option value="" disabled selected>Bairro</option>                
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <input type="checkbox" ng-model="contribuinte.confirmar"/>
+                    Os dados informados são sigilosos e garantem a realidade da pesquisa.
+                  </div>                 
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <button class="btn btn-lt" ng-click="acessar()"><i class="fa fa-key"></i>&nbsp;Acessar</button>
+                  </div>
+                </div>
+
+            </div>
+
+
+           <h6>&copy; 2018 - Prefeitura Municipal de Cachoeirinha - RS</h6>
+        </div>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>  
+        <script type="text/javascript" src="js/angular-confirm.min.js"></script>  
+        <script type="text/javascript" src="js/angular/app.js"></script>
+        <script type="text/javascript" src="js/angular/service/service.js"></script>
+        <script type="text/javascript" src="js/angular/controller/registro.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        
+
+        <script>
+            $("#cpf").mask("999.999.999-99");
+        </script>
+    </body>
+</html>

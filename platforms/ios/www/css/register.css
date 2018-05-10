@@ -1,0 +1,59 @@
+.app {
+    background:url(../img/image_225.png) no-repeat center top; /* 170px x 200px */   
+    padding: 0px;    
+    top:30%;
+    padding-top: 70px;
+};
+
+.login-box{
+	display: block;
+	width:100%;	
+	background-size: cover;
+	margin:0 auto;	
+	padding: 7px;		
+	margin-top: 25px;
+	padding-top: 0px;
+}
+
+
+
+.login-box span{
+	display: inline-block;
+	width: 10%;
+	height: 25px;
+	float:left;
+	background:#363636;	
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	line-height: 25px;
+}
+
+.login-box span i{
+	color:#B5B5B5;	
+}
+
+.login-box input,.login-box select{
+	width: 90%;
+	height: 25px;
+	display: inline-block;
+	float:left;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.login-box .row{
+	margin-top: 3vh;
+}
+
+.login-box input[type="checkbox"]{
+	width: 5%;
+	height: auto;
+}
+
+p.atestado{
+	display: inline-block;
+	padding: 0px;
+	width: 95% !important;
+	color:black;	
+	background: none;
+}
