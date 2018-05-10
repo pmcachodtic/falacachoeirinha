@@ -6,6 +6,12 @@
   "version": "br.gov.rs.cachoeirinha",
   "description": "Aplicativo para realização de pesquisas relacionadas ao município de Cachoeirinha / RS.",
   "author": "Fabrica de Software - Prefeitura Municipal de Cachoeirinha - RS",
-  "icons": [],
+  "icons": [
+    {
+      "src": "res/dialogo.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
   "start_url": "index.html"
 }
