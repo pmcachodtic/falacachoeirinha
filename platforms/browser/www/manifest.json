@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Dialogos com a Cidade",
-  "short_name": "Dialogos com a Cidade",
+  "name": "Fala Cachoeirinha",
+  "short_name": "Fala Cachoeirinha",
   "version": "br.gov.rs.cachoeirinha",
-  "description": "Aplicativo para realização de pesquisas relacionadas ao município de Cachoeirinha / RS.",
+  "description": "Aplicativo para realização de pesquisas realizadas pela Prefeitura Municipal de Cachoeirinha / RS.",
   "author": "Fabrica de Software - Prefeitura Municipal de Cachoeirinha - RS",
   "icons": [
     {

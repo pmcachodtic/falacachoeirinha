@@ -4,9 +4,9 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>Dialogos com a Cidade</name>
+    <name>Fala Cachoeirinha</name>
     <description>
-        Aplicativo para realização de pesquisas relacionadas ao município de Cachoeirinha / RS.
+        Aplicativo para realização de pesquisas realizadas pela Prefeitura Municipal de Cachoeirinha / RS.
     </description>
     <author email="dti@cachoeirinha.rs.gov.br" href="http://www.cachoeirnha.rs.gov.br">
         Fabrica de Software - Prefeitura Municipal de Cachoeirinha - RS

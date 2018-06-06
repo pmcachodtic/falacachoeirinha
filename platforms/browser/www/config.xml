@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="br.gov.rs.cachoeirinha" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Dialogos com a Cidade</name>
+    <name>Fala Cachoeirinha</name>
     <description>
-        Aplicativo para realização de pesquisas relacionadas ao município de Cachoeirinha / RS.
+        Aplicativo para realização de pesquisas realizadas pela Prefeitura Municipal de Cachoeirinha / RS.
     </description>
     <author email="dti@cachoeirinha.rs.gov.br" href="http://www.cachoeirnha.rs.gov.br">
         Fabrica de Software - Prefeitura Municipal de Cachoeirinha - RS
