@@ -1,0 +1,26 @@
+
+.app{
+	top:30%;
+	padding-top: 70px;
+}
+
+.quiz-box{
+	background: rgba(255,255,255,.6);
+	margin-top: 3px;
+}
+
+.titulo{
+
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+
+.texto{
+	padding: 5px;
+}
+
+.link{
+	padding: 5px;
+}

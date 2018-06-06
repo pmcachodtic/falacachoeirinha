@@ -23,7 +23,7 @@
     /*}*/
 /*}*/
 
-body{   
+body{       
     background-color: #1874CD;
     background-image:linear-gradient(top, #1874CD 0%, #63B8FF 51%);
     background-image:-webkit-linear-gradient(top, #1874CD 0%, #63B8FF 51%);
@@ -34,8 +34,7 @@ body{
         left bottom,
         color-stop(0, #1874CD),
         color-stop(0.51, #63B8FF)
-    );
-    
+    );    
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;

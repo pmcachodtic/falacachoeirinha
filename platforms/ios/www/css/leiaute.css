@@ -23,8 +23,8 @@
     /*}*/
 /*}*/
 
-body{   
-    background-color:;
+body{       
+    background-color: #1874CD;
     background-image:linear-gradient(top, #1874CD 0%, #63B8FF 51%);
     background-image:-webkit-linear-gradient(top, #1874CD 0%, #63B8FF 51%);
     background-image:-ms-linear-gradient(top, #1874CD 0%, #63B8FF 51%);
@@ -34,8 +34,7 @@ body{
         left bottom,
         color-stop(0, #1874CD),
         color-stop(0.51, #63B8FF)
-    );
-    
+    );    
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -51,7 +50,7 @@ h6 {
     font-size:12px;
     font-weight:normal;  
     text-align:center;
-    color:#4682B4;
+    color:black;
     border-top: 1px solid black;
     padding-top: 3px;
 }

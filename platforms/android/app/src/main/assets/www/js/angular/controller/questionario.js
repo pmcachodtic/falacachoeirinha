@@ -64,16 +64,22 @@ app.controller('questoes-controller',['$scope','$http','$window','$ngConfirm','d
 
 	$scope.registrar=function(){
 
-		
-
-
 		$http.post('http://sistemas.cachoeirinha.rs.gov.br/pmcachoSocialQuiz/criar/respostas',$scope.questoes).then(function(data){
 			if(data.data){
-				dticservice.confirmacaoHTML('Resposta enviada!<p>Obrigado por participar de nossa pesquisa!</p><p>Apoveite para responder sobre outro tópico!</p>','categorias.html',$scope,$ngConfirm,$window);
+				dticservice.confirmacao('Resposta enviada! Obrigado por participar de nossa pesquisa!','grupo.html?pid='+JSON.parse($window.sessionStorage.getItem('pesquisa')).id,$scope,$ngConfirm,$window);				
 			}
 		});
-
 		
+	};
+
+
+	$scope.clicarOPT=function($event){
+	
+		if($event.currentTarget.nodeName=="LI"){					
+		 	$($event.currentTarget).find('INPUT').prop("checked",true);
+		}else{
+		 	$($event.currentTarget).parent().find('INPUT').first().prop("checked",true);
+		}
 	};
 
 

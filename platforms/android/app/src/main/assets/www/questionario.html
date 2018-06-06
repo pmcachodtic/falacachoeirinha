@@ -2,14 +2,13 @@
 
 <html ng-app="dti">
     
-          <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' *; media-src *; img-src 'self' data: content:;script-src 'self' 'unsafe-inline';connect-src http://sistemas.cachoeirinha.rs.gov.br/pmcachoSocialQuiz/;font-src 'self' data: http://sistemas.cachoeirinha.rs.gov.br/fonts/;">
+          <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;script-src 'self' 'unsafe-inline';connect-src http://sistemas.cachoeirinha.rs.gov.br/pmcachoSocialQuiz/">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">        
-        <link rel="stylesheet" type="text/css" href="css/angular-confirm.min.css">
-        <link href="http://sistemas.cachoeirinha.rs.gov.br/fonts/fontes.css" rel="stylesheet"/>     
+        <link rel="stylesheet" type="text/css" href="css/angular-confirm.min.css">        
         <link rel="stylesheet" type="text/css" href="css/leiaute.css">
         <link rel="stylesheet" type="text/css" href="css/questionario.css">
         <link rel="icon"  href="img/dialogo.png">
@@ -25,41 +24,40 @@
             <div ng-repeat="q in questoes|orderBy:'questao.id'" class="questoes">
               <h5>{{q.questao.descricao}}</h5>
               <ul>
-                <li>
-                  <input type="radio" ng-value="5"  name="{{q.questao.id}}"  ng-model="q.resposta" /><label>Muito bom</label>
-                  <i class="emoji">&#128512;</i>
-                  
+                <li ng-click="clicarOPT($event)">
+                  <input type="radio" ng-value="5"  name="{{q.questao.id}}"  ng-model="q.resposta" />
+                  <img class="icone" src="img/muitobom.png" alt="Muito bom!"/>
+                  <label>Muito bom</label>                  
                 <li/>
-                <li>
-                  <input type="radio"  ng-value="4"  name="{{q.questao.id}}"  ng-model="q.resposta" /><label>Bom</label>
-                  <i class="emoji hidden-lg">&#128578;</i>
-                  
+                <li ng-click="clicarOPT($event)">
+                  <input type="radio"  ng-value="4"  name="{{q.questao.id}}"  ng-model="q.resposta" />
+                  <img class="icone " src="img/bom.png" alt="Bom"/>
+                  <label>Bom</label>                  
                 </li>
-                <li>
-                  <input type="radio"  ng-value="3"  name="{{q.questao.id}}"  ng-model="q.resposta" /><label>Regular</label>  
-                  <i class="emoji hidden-lg">&#129300;</i>
-                  
+                <li ng-click="clicarOPT($event)">
+                  <input type="radio"  ng-value="3"  name="{{q.questao.id}}"  ng-model="q.resposta" />
+                  <img class="icone " src="img/regular.png" alt="Regular"/>
+                  <label>Regular</label>                    
                 </li>
-                <li>
-                  <input type="radio"  ng-value="2"  name="{{q.questao.id}}"  ng-model="q.resposta" /><label>Ruim</label>
-                  <i class="emoji hidden-lg">&#128543;</i>
-                  
+                <li ng-click="clicarOPT($event)">
+                  <input type="radio"  ng-value="2"  name="{{q.questao.id}}"  ng-model="q.resposta" />
+                  <img class="icone " src="img/ruim.png" alt="Ruim"/>
+                  <label>Ruim</label>                  
                 </li>
-                <li>
-                  <input type="radio"  ng-value="1" name="{{q.questao.id}}"  ng-model="q.resposta" /><label>Muito Ruim</label>    
-                  <i class="emoji hidden-lg">&#128534;</i>
-                  
+                <li ng-click="clicarOPT($event)">
+                  <input type="radio"  ng-value="1" name="{{q.questao.id}}"  ng-model="q.resposta" />                  
+                  <img class="icone " src="img/muitoruim.png" alt="Muito ruim!"/>
+                  <label>Muito Ruim</label>    
                 </li>      
                 <li>
-                  <input type="text" ng-model="q.obs" placeholder="Deixe-nos sua opinião a respeito deste tópico!"/>
+                  <input type="text" ng-model="q.obs" placeholder="Deixe-nos sua opinião!"/>
                 </li>
               <ul/>
             </div>
             
             <div class="row">
               <div class="col-xs-12 col-lg-12 text-center">
-                <button class="btn btn-primary" ng-click="registrar()"><i class=" fa fa-check"></i> Submeter</button>        
-                <a href="categorias.html" class="btn btn-danger"><i class=" fa fa-times"></i> Cancelar</a>        
+                <button class="btn btn-primary" ng-click="registrar()"><i class=" fa fa-check"></i> Submeter</button>                        
               </div>
             </div>
 

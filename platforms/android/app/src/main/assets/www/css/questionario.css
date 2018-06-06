@@ -1,11 +1,13 @@
 .app{
 	top:30%;
 	padding-top: 70px;
+	text-align: left;
 }
 
 
 ul{
 	list-style: none;
+	padding-left: 0px;
 }
 li{
 	margin-bottom: 7px;
@@ -20,19 +22,23 @@ input[type='radio']{
 }
 
 
+
+.icone{	
+	display: inline-block;
+	width: 24px;
+	height: 24px;	
+}
+
+
 label{
 	color:white;
 	display: inline-block;
-	width: 150px;
+	width: 120px;
+	font-size: 12px;
 	text-shadow: 1px 1px black;
+	text-align: left;
 }
 
-.emoji{
-	font-family: noto_emoji;
-	display: inline-block;
-	width: 24px;
-	text-align: center;
-}
 h5{
 	font-weight: bold;
 	color:white;
@@ -54,6 +60,7 @@ button{
 }
 
 input[type='text']{
-	padding-left: 7px;
-	padding-right: 7px;
+	width: 100%;
+	padding-left: 3px;
+	padding-right: 3px;
 }
