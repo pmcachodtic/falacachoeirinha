@@ -1,7 +1,7 @@
 {
     "name": "br.gov.rs.cachoeirinha",
     "displayName": "Fala Cachoeirinha",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "Aplicativo para realização de pesquisas realizadas pela Prefeitura Municipal de Cachoeirinha / RS.",
     "main": "index.js",
     "scripts": {
