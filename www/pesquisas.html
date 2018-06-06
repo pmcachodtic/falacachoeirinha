@@ -43,7 +43,14 @@
     </head>
     <body>
         <div class="app" ng-controller="pesquisa-controller">
-         
+            
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                   <a href="registro.html" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp; Sair</a>
+                </div>
+            </div>
+            
+
 
             <div class="row quiz-box" ng-repeat="p in pesquisas">
                 <div class="col-ms-12 text-center titulo">
@@ -57,6 +64,11 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                   <a href="registro.html" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp; Sair</a>
+                </div>
+            </div>
 
            <h6 ng-cotroller="versao-controller">&copy; 2018 - Prefeitura Municipal de Cachoeirinha - RS - Versão {{versao}}</h6>
         </div>
@@ -69,5 +81,15 @@
         <script type="text/javascript" src="js/angular/controller/pesquisas.js"></script>
         <script type="text/javascript" src="js/angular/controller/versao.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
+
+
+        <script>
+          
+          document.addEventListener("backbutton", onBackKeyDown, false);
+
+          function onBackKeyDown() {
+            window.location.replace("registro.html");
+          }
+        </script>
     </body>
 </html>
