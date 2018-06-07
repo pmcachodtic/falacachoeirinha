@@ -123,5 +123,15 @@
         <script>
             $("#cpf").mask("999.999.999-99");
         </script>
+
+
+        <script>
+          
+          document.addEventListener("backbutton", onBackKeyDown, false);
+
+          function onBackKeyDown() {
+            window.location.replace("registro.html");
+          }
+        </script>
     </body>
 </html>

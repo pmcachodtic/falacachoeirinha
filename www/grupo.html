@@ -18,11 +18,7 @@
     <body>
         <div class="app" ng-controller="grupos-controller">
             
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                   <a href="pesquisas.html" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp; Sair</a>
-                </div>
-            </div>
+            
 
             <p class="titulo">Selecione uma área de interesse:</p>
             <div class="row wrapper text-center" ng-repeat="g in grupos" > 
@@ -36,11 +32,7 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                   <a href="pesquisas.html" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp; Sair</a>
-                </div>
-            </div>
+            
 
            <h6 ng-cotroller="versao-controller">&copy; 2018 - Prefeitura Municipal de Cachoeirinha - RS - Versão {{versao}}</h6>
         </div>
@@ -53,7 +45,7 @@
         <script type="text/javascript" src="js/angular/controller/grupos.js"></script>
         <script type="text/javascript" src="js/angular/controller/versao.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-        
+
         <script>
           
           document.addEventListener("backbutton", onBackKeyDown, false);
